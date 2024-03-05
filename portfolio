@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+   <style>/* Reset Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Global Styles */
+    body {
+      background: linear-gradient(to right, #66adff, #000000); /* Gradient background */
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .container {
+    
+      max-height: 600px;
+      margin:40px auto;
+      max-width: 960px;
+      padding: 30px;
+      padding-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(15, 8, 8, 0.1);
+      border-radius: 10px;
+      border-bottom: 20px;
+      background-color: rgba(11, 1, 1, 0.5); /* Semi-transparent background */
+    }
+    
+    /* Header */
+    #header {
+      text-align: center;
+      padding: 50px 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    nav img.logo {
+      border-radius: 50%;
+      padding-right: 30px;
+      padding-left:0px;
+      padding-top: 10px;
+      transition: transform 0.2s ease;
+    }
+    
+    
+    nav img.logo:hover {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: #ff004f; /* Change link color on hover */
+    }
+    res{
+      color:#ff004f
+    }
+    
+    /* Sections */
+    .sub-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    /* Footer #1a1a13*/
+    footer {
+      background-color: #1a1a13;
+      color: #f4fbf4;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    nav img.logo2 {
+      border-radius: 50%;
+      padding-right: 30px;
+      padding-left:0px;
+      padding-top: 10px;
+      transition: transform 0.2s ease;
+      margin-left: 50px;
+    
+    }
+    /* Contact Section */
+    .Contact-col {
+      text-align: center;
+    }
+    
+    .contact-info {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .contact-info li {
+      margin-bottom: 15px;
+    }
+    
+    .contact-info li i {
+      margin-right: 10px;
+      color: #ff004f; /* Adjust icon color */
+      font-size: 20px;
+    }
+    
+    .contact-info li .item {
+      color: #fff; /* Adjust text color */
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    /* Skills Section */
+    .skills-col {
+      text-align: center;
+    }
+    
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skills-list li {
+      background-color: #ff004f;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 18px;
+    }
+    
+    .skills-list li:first-child {
+      margin-left: 0;
+    }
+    
+    .skills-list li:last-child {
+      margin-right: 0;
+    }
+    /* Resume Section */
+    .resume-content {
+      text-align: center;
+    }
+    
+    .resume-button {
+      margin-top: 20px;
+    }
+    
+    .resume-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff004f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .resume-link:hover {
+      background-color: #d6004a;
+    }
+    /* Project Section */
+    .project-content {
+      text-align: center;
+    }
+    
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .project-info {
+      margin-bottom: 20px;
+    }
+    
+    .project-info h3 {
+      color: #ff004f;
+    }
+    
+    .project-image img {
+      border-radius: 5px;
+      box-shadow: 0 4px 8px red;
+      transition: transform 0.3s ease;
+    }
+    
+    .project-image img:hover {
+      transform: scale(1.05);
+    }</style>
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="profile pic.jpg" class="logo" width="300px" height="300px">
+                <ul>
+                  
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#Resume">RESUME</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span style="color:#ff004f">Jothi sri S</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title" style="color:#ff004f">About Me</h1>
+                    <p>Highly motivated and creative Computer Science student with strong programming skills and a passion for innovation. Seeking an internship or entry-level position to apply technical knowledge in a dynamic environment and contribute to cutting-edge solutions. I have several years of experience in web development, specializing in front-end technologies such as HTML, CSS, and JavaScript.</p>
+                </div>
+              <!-- <div class="about-col-2">
+                    <img src="https://w7.pngwing.com/pngs/1001/469/png-transparent-logo-author-rondonia-blog-font-about-me-blue-text-logo.png" class="logo" width="250px" height="300px">-->
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="skills-col">
+                <h1 class="sub-title" style="color:#ff004f">Skills</h1>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C Programming</li>
+                    <li>Data structures in c</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Project Section -->
+<section id="projects">
+    <div class="container">
+        <div class="project-content">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-details">
+                <div class="project-info">
+                    <h3>Title: Fastest Finger First Circuit</h3>
+                    <p>Under the subject of Digital Fundamentals and Computer Organization, we a team of two members demonstrated this project. Our project aims to develop a quiz game using Arduino and a reliable fastest finger first circuit which would be able to indicate the fastest person to hit the button first using 555 Timer IC, displaying the team number, using BCD to seven segment display and combination of OR gates.</p>
+                </div>
+                <div class="project-image">
+                    <a href="QUIZ BUZZER .pdf">Download Project Presentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="resume">
+    <div class="container">
+        <div class="resume-content">
+            <h1 class="sub-title">Resume</h1>
+            <p>To explore my skills, projects, and certifications, please click the link to download my resume.</p>
+            <div class="resume-button">
+                <a href="Jothisri_resume.pdf" class="resume-link">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-col">
+                <h1 class="sub-title" style="color:#ff004f">Contact</h1>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> <span class="item">jothisri200518@gmail.com</span></li>
+                    <li><i class="fas fa-phone"></i> <span class="item">+91 6381582319</span></li>
+                    <li><i class="fab fa-linkedin"></i> <span class="item">jothisri@linkedin.com</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jothi sri | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
